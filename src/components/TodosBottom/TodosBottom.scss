@@ -1,0 +1,23 @@
+.todos {
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  &__status {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  &__status-item {
+    padding: 5px;
+    border: 1px solid transparent;
+  }
+  &__status-item.active {
+    border: 1px solid pink;
+  }
+  &__left {
+    width: 95px;
+  }
+}

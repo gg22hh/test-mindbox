@@ -1,0 +1,23 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  &__box {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    & input {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  &__name {
+    font-size: 20px;
+    &.completed {
+      color: gray;
+      text-decoration: line-through;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.todo {
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    & input {
+      width: 100%;
+      padding: 7px 15px;
+      border: 1px solid white;
+      outline: unset;
+      padding: 0 10px 0 10px;
+      &::placeholder {
+        color: gray;
+        font-style: italic;
+      }
+    }
+    & button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__arrow {
+    width: 20px;
+    height: 18px;
+    transition: all 0.2s;
+    &.active {
+      transform: rotate(90deg);
+    }
+  }
+}
